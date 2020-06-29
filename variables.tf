@@ -75,6 +75,6 @@ variable "vnf_cos_image_url" {
 }
 
 variable "vnf_vpc_image_name" {
-  default     = "Delphix 6.0.2.1""
+  default     = "Delphix 6.0.2.1"
   description = "The name of the custom image to be provisioned in your IBM Cloud account."
 }
