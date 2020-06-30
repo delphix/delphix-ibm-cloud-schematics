@@ -74,3 +74,8 @@ variable "vnf_vpc_image_name" {
   default     = "delphix-6.0.2.1"
   description = "The name of the custom image to be provisioned in your IBM Cloud account."
 }
+
+variable "subnet_id" {
+  default = ""
+  description = "The id of the subnet where the Delhpix VSI is to be provisioned."
+}
