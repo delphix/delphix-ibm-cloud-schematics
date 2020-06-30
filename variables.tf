@@ -38,7 +38,7 @@ variable "profile" {
 
 variable "volumecount" {
   # default volume count
-    default = "4
+    default = "4"
     description = "The number of block storage data volumes for use by the Delphix Engine."
 }
 
@@ -60,7 +60,7 @@ variable "vpcname" {
   description = "The name of the VPC where you want to deploy the Delphix Engine."
 }
 variable "zone" {
-  default     = "us-south-1"
+  default     = "us-east-1"
   description = "The VPC Zone that you want your VPC networks and virtual servers to be provisioned in. To list available zones, run `ibmcloud is zones`."
 }
 
