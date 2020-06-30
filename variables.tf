@@ -3,6 +3,11 @@ variable "ibmcloud_api_key" {
     description = "The user's IBM Cloud api key."
 }
 
+variable "ssh_key" {
+  # defined in tfvars
+  description = "The name of the public SSH key to be used when provisining Delphix VSI."
+}
+
 variable "iaas_classic_username" {
  # defined in tfvars
    description = "The user's classic infastructure user name."
