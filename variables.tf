@@ -7,10 +7,6 @@ variable "ibmcloud_api_key" {
   # defined in tfvars
     description = "The user's IBM Cloud api key."
 }
-variable "ssh_key" {
-  # defined in tfvars
-  description = "The name of the public SSH key to be used when provisining Delphix VSI."
-}
 
 variable "iaas_classic_username" {
  # defined in tfvars
@@ -30,7 +26,7 @@ variable "hostname" {
 
 variable "region" {
   # default region to be used
-    default = "us-south"
+    default = "us-east"
     description = "Optional. The value of the region of VPC."
 }
 
@@ -75,7 +71,7 @@ variable "resource_group" {
 }
 
 variable "vnf_cos_image_url" {
-  default     = "cos://us-south/delphix-images/Delphix_6.0.0.0_2020-01-17-16-36_Standard_KVM.qcow2"
+  default     = "cos://us-east/delphix-data-virtualization-cos-standard-axh/Delphix_6.0.2.1_2020-06-03-17-16_Standard_KVM.qcow"
   description = "The COS image object URL for Delphix Engine image."
 }
 
