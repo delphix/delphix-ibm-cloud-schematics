@@ -65,7 +65,7 @@ variable "resource_group" {
   description = "Optional. The value of the resource group of VPC."
 }
 
-variable "vnf_cos_image_url" {cos
+variable "vnf_cos_image_url" {
   default     = "cos://us-east/delphix-data-virtualization-cos-standard-axh/Delphix_6.0.2.1_2020-06-03-17-16_Standard_KVM.qcow2"
   description = "The COS image object SQL URL for Delphix image."
 }
