@@ -14,11 +14,6 @@ data "ibm_resource_group" "myrg" {
     name = "${var.resource_group}"
 }
 
-# make ssh key details visible by using name in variables.tf
-data ibm_is_ssh_key "ssh_key_id" {
-  name = "${var.ssh_key}"
-}
-
 # Generating random ID
 resource "random_uuid" "test" { }
 
@@ -58,7 +53,6 @@ resource "ibm_is_instance" "instance" {
   # resource_group = "${data.ibm_resource_group.myrg.id}"
   vpc       = "${data.ibm_is_vpc.myvpc.id}"
   zone    = "${var.zone}"
-  keys      = ["${data.ibm_is_ssh_key.ssh_key_id.id}"]
   volumes = ["${ibm_is_volume.new_volume.*.id}"]
 }
 
