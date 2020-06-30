@@ -2,10 +2,6 @@ variable "ibmcloud_api_key" {
   # defined in tfvars
     description = "The user's IBM Cloud api key."
 }
-variable "ssh_key" {
-  # defined in tfvars
-  description = "The name of the public SSH key to be used when provisining Delphix VSI."
-}
 
 variable "iaas_classic_username" {
  # defined in tfvars
@@ -19,13 +15,13 @@ variable "iaas_classic_api_key" {
 
 variable "hostname" {
   # default region to be used
-    default = "vm1"
+    default = "ddpeng1"
     description = "The name of your Delphix Virtual Server to be provisioned."
 }
 
 variable "region" {
   # default region to be used
-    default = "us-south"
+    default = "us-east"
     description = "Optional. The value of the region of VPC."
 }
 
@@ -37,7 +33,7 @@ variable "profile" {
 
 variable "volumecount" {
   # default volume count
-    default = "1"
+    default = "4"
     description = "The number of block storage volumes to create for the Delphix VSI."
 }
 
@@ -49,7 +45,7 @@ variable "volumeprofile" {
 
 variable "volumesize" {
   # default volume size to be used
-    default = "25"
+    default = "900"
     description = "The block storage volume size in GB. Enter a size between 10 and 2000 GB."
 }
 
@@ -59,7 +55,7 @@ variable "vpcname" {
   description = "The name of your VPC where the Delphix  VSI is to be provisioned."
 }
 variable "zone" {
-  default     = "us-south-1"
+  default     = "us-east-1"
   description = "The VPC Zone that you want your VPC networks and virtual servers to be provisioned in. To list available zones, run `ibmcloud is zones`."
 }
 
@@ -69,12 +65,12 @@ variable "resource_group" {
   description = "Optional. The value of the resource group of VPC."
 }
 
-variable "vnf_cos_image_url" {
-  default     = "cos://us-south/delphix-images/Delphix_6.0.0.0_2020-01-17-16-36_Standard_KVM.qcow2"
+variable "vnf_cos_image_url" {cos
+  default     = "cos://us-east/delphix-data-virtualization-cos-standard-axh/Delphix_6.0.2.1_2020-06-03-17-16_Standard_KVM.qcow2"
   description = "The COS image object SQL URL for Delphix image."
 }
 
 variable "vnf_vpc_image_name" {
-  default     = "delphix-ga6"
+  default     = "delphix-6.0.2.1"
   description = "The name of the custom image to be provisioned in your IBM Cloud account."
 }

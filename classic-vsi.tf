@@ -14,11 +14,6 @@ data "ibm_resource_group" "myrg" {
     name = "${var.resource_group}"
 }
 
-# make ssh key details visible by using name in variables.tf
-data ibm_is_ssh_key "ssh_key_id" {
-  name = "${var.ssh_key}"
-}
-
 # Generating random ID
 resource "random_uuid" "test" { }
 
@@ -34,7 +29,9 @@ resource "ibm_is_image" "vnf_custom_image" {
     delete = "10m"
   }
 }
-
+data "ibm_is_subnet" "subnet1"{
+   identifier = "${var.subnet_id}"
+}
 # create volumes for the Delphix VSI
 resource "ibm_is_volume" "new_volume" {
   count = "${var.volumecount}"
