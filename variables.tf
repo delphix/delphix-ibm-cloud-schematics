@@ -81,6 +81,6 @@ variable "vnf_vpc_image_name" {
 }
 
 variable "subnet_id" {
-  default = ""
+  default = "dev-sub1"
   description = "The id of the subnet where the Delhpix VSI is to be provisioned."
 }
