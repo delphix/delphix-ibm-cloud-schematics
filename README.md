@@ -28,7 +28,7 @@ A step by step series of examples that tell you how to get a development env run
 Refer to the Delphix [Deployment documentation](https://docs.delphix.com/docs/deployment) for detailed deployment instructions.	
 
 ### Support	
-This product is provided and supported by Delphix. If you encounter an issue that requires opening a support case, click Get help? at the beginning of this page to be directed to Delphix support page. For issues with the underlying IBM Cloud resources, open a support case in the IBM Cloud Support Center. 
+This product is provided and supported by Delphix. If you encounter an issue that requires opening a support case, click Get help? at the beginning of this page to be directed to [Delphix support page](https://support.delphix.com). For issues with the underlying IBM Cloud resources, open a support case in the IBM Cloud Support Center. 
 
 ### Authors
 
