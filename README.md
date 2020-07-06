@@ -15,7 +15,13 @@ Delphix software deployment requirements are detailed in [Delphix documentation]
 
 ### Required system resources			
 To run the software, the following system resources are required:		
-1. Instance profile: Delphix requires a ratio of 8 vCPU to 64 GB RAM with that minimum. Recommended configuration is 16 vCPU with 128 GB RAM. Full details regarding configuration requirements can be found in our documentation. 
+1. Instance profile: Delphix recommends the memory profiles for your VPC environment.
+  Profile     vCPU  Memory  Network Cap
+  mx2-8x64	  8	    64	    16
+  mx2-16x128	16	  128	    32
+  mx2-32x256	32	  256	    64 
+  Mx2-48x384  48    384     80
+  
 2. Data Source support Matrix. Refer to [Delphix documentation](https://docs.delphix.com) and go to the Support Matrix section.	
 
 ### Installing
