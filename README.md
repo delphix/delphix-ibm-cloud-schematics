@@ -23,29 +23,13 @@ To run the software, the following system resources are required:
 A step by step series of examples that tell you how to get a development env running
 (Coming later)
 
-
 ## Deployment
 
 Refer to the Delphix [Deployment documentation](https://docs.delphix.com/docs/deployment) for detailed deployment instructions.	
 
-## Getting support	
+## Support	
 This product is provided and supported by Delphix. If you encounter an issue that requires opening a support case, click Get help? at the beginning of this page to be directed to Delphix support page. For issues with the underlying IBM Cloud resources, open a support case in the IBM Cloud Support Center. 
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://github.com/delphix/.github/blob/master/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
 
 ## Authors
 
 * **Doug Smith** - *Initial work* - [Delphix](https://www.delphix.com)
-
