@@ -13,7 +13,7 @@ Virtualized datasets non-disruptively sync with production instances.
 ### Prerequisites
 Delphix software deployment requirements are detailed in [Delphix documentation](https://docs.delphix.com).					
 
-## Required system resources			
+### Required system resources			
 To run the software, the following system resources are required:		
 1. Instance profile: Delphix requires a ratio of 8 vCPU to 64 GB RAM with that minimum. Recommended configuration is 16 vCPU with 128 GB RAM. Full details regarding configuration requirements can be found in our documentation. 
 2. Data Source support Matrix. Refer to [Delphix documentation](https://docs.delphix.com) and go to the Support Matrix section.	
@@ -23,13 +23,13 @@ To run the software, the following system resources are required:
 A step by step series of examples that tell you how to get a development env running
 (Coming later)
 
-## Deployment
+### Deployment
 
 Refer to the Delphix [Deployment documentation](https://docs.delphix.com/docs/deployment) for detailed deployment instructions.	
 
-## Support	
+### Support	
 This product is provided and supported by Delphix. If you encounter an issue that requires opening a support case, click Get help? at the beginning of this page to be directed to Delphix support page. For issues with the underlying IBM Cloud resources, open a support case in the IBM Cloud Support Center. 
 
-## Authors
+### Authors
 
 * **Doug Smith** - *Initial work* - [Delphix](https://www.delphix.com)
