@@ -15,6 +15,17 @@ Virtualized datasets non-disruptively sync with production instances.
 - The given VPC must have at least one subnet IP address unassigned - the F5-BIGIP VSI will be assigned a IP Address from the user provided subnet as an input.
 - Delphix software deployment requirements are detailed in [Delphix documentation](https://docs.delphix.com).					
 
+#### Dependencies
+Before you can apply the template in IBM Cloud, complete the following steps.
+
+1. Ensure that you have the following permissions in IBM Cloud Identity and Access Management:
+- Manager service access role for IBM Cloud Schematics
+- Operator platform role for VPC Infrastructure
+2. Ensure the following resources exist in your VPC Gen 2 environment
+- VPC
+- SSH Key
+- VPC has a subnet
+
 ### Required system resources			
 To run the software, the following system resources are required:		
 1. Instance profile: Delphix recommends the memory profiles for your VPC environment.
@@ -30,6 +41,7 @@ Recommended Profiles:
 
 A step by step series of examples that tell you how to get a development env running
 (Coming later)
+
 
 ### Deploying Delphix
 
