@@ -24,7 +24,7 @@ Recommended Profiles:
 - mx2-32x256
 - mx2-48x384 
   
-2. Data Source support Matrix. Refer to [Delphix documentation](https://docs.delphix.com) and go to the Support Matrix section.	
+2. To view the Data Sources supported by Delphix, refer to [Delphix documentation](https://docs.delphix.com) and select the Support Matrix section.	
 
 ### Installing
 
