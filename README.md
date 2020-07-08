@@ -25,12 +25,12 @@ Recommended Profiles: mx2-8x64, mx2-16x128, mx2-32x256, mx2-48x384
 A step by step series of examples that tell you how to get a development env running
 (Coming later)
 
-### Deployment
+### Deploying Delphix
 
 Refer to the Delphix [Deployment documentation](https://docs.delphix.com/docs/deployment) for detailed deployment instructions.	
 
 ### Support	
-This product is provided and supported by Delphix. If you encounter an issue that requires opening a support case, click Get help? at the beginning of this page to be directed to [Delphix support page](https://support.delphix.com). For issues with the underlying IBM Cloud resources, open a support case in the IBM Cloud Support Center. 
+This product is provided and supported by Delphix. If you encounter an issue that requires opening a support case, click Get help? at the beginning of this page or go directly to [Delphix support page](https://support.delphix.com). For issues with the underlying IBM Cloud resources, open a support case in the IBM Cloud Support Center. [The Delphix support policies](https://support.delphix.com/Support_Policies_and_Technical_Bulletins/Support_Policies/Delphix_Support_Policies_(KBA1504)) are based on your support plan level. You must have a [Delphix Support account](https://support.delphix.com/Support_Policies_and_Technical_Bulletins/Support_Policies/Customer_Support_User_Account_Registration_Policy_(KBA1028)) to file a case.
 
 ### Authors
 
