@@ -11,12 +11,18 @@ Version data like code:  rewind, branch, and share datasets from any point in ti
 Virtualized datasets non-disruptively sync with production instances.
 
 ### Prerequisites
-Delphix software deployment requirements are detailed in [Delphix documentation](https://docs.delphix.com).					
+- Must have access to Gen 2 VPC.
+- The given VPC must have at least one subnet IP address unassigned - the F5-BIGIP VSI will be assigned a IP Address from the user provided subnet as an input.
+- Delphix software deployment requirements are detailed in [Delphix documentation](https://docs.delphix.com).					
 
 ### Required system resources			
 To run the software, the following system resources are required:		
 1. Instance profile: Delphix recommends the memory profiles for your VPC environment.
-Recommended Profiles: mx2-8x64, mx2-16x128, mx2-32x256, mx2-48x384 
+Recommended Profiles: 
+- mx2-8x64 (minimum)
+- mx2-16x128
+- mx2-32x256
+- mx2-48x384 
   
 2. Data Source support Matrix. Refer to [Delphix documentation](https://docs.delphix.com) and go to the Support Matrix section.	
 
