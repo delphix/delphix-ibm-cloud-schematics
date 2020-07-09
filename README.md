@@ -50,6 +50,12 @@ Refer to the Delphix [Deployment documentation](https://docs.delphix.com/docs/de
 ### Support	
 This product is provided and supported by Delphix. If you encounter an issue that requires opening a support case, click Get help? at the beginning of this page or go directly to [Delphix support page](https://support.delphix.com). For issues with the underlying IBM Cloud resources, open a support case in the IBM Cloud Support Center. [The Delphix support policies](https://support.delphix.com/Support_Policies_and_Technical_Bulletins/Support_Policies/Delphix_Support_Policies_(KBA1504)) are based on your support plan level. You must have a [Delphix Support account](https://support.delphix.com/Support_Policies_and_Technical_Bulletins/Support_Policies/Customer_Support_User_Account_Registration_Policy_(KBA1028)) to file a case.
 
+### About BYOL
+BYOL (Bring Your Own License) solutions let you run software on Compute Engine while using licenses purchased directly from the provider. IBM Cloud only charges you for the infrastructure costs, giving you the flexibility to purchase and manage your own licenses. [Contact Delphix](https://www.delphix.com/company/contact) for more information.
+ 
+### End User License Agreement
+By subscribing to this product you agree to terms and conditions outlined in the product [End User License Agreement (EULA](https://www.delphix.com/sites/default/files/2019-04/Delphix-Product-License-and-Services-Agreement-Commercial.pdf).
+
 ### Authors
 
 * **Doug Smith** - *Initial work* - [Delphix](https://www.delphix.com)
