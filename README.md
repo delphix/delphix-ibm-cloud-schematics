@@ -54,7 +54,7 @@ This product is provided and supported by Delphix. If you encounter an issue tha
 BYOL (Bring Your Own License) solutions let you run software on Compute Engine while using licenses purchased directly from the provider. IBM Cloud only charges you for the infrastructure costs, giving you the flexibility to purchase and manage your own licenses. [Contact Delphix](https://www.delphix.com/company/contact) for more information.
  
 ### End User License Agreement
-By subscribing to this product you agree to terms and conditions outlined in the product [End User License Agreement (EULA](https://www.delphix.com/sites/default/files/2019-04/Delphix-Product-License-and-Services-Agreement-Commercial.pdf).
+By subscribing to this product you agree to terms and conditions outlined in the product [End User License Agreement (EULA)](https://www.delphix.com/sites/default/files/2019-04/Delphix-Product-License-and-Services-Agreement-Commercial.pdf).
 
 ### Authors
 
