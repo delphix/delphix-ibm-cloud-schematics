@@ -1,8 +1,3 @@
-variable "TF_VERSION" {
- default = "0.12"
- description = "terraform engine version to be used in schematics"
-}
-
 variable "ibmcloud_api_key" {
   # defined in tfvars
     description = "The user's IBM Cloud api key."
