@@ -1,3 +1,8 @@
+variable "TF_VERSION" {
+ default = "0.12"
+ description = "terraform engine version to be used in schematics"
+}
+
 variable "ibmcloud_api_key" {
   # defined in tfvars
     description = "The user's IBM Cloud api key."
@@ -56,17 +61,17 @@ variable "volumesize" {
 
 variable "vpcname" {
   # default vpc name to be used
-  default = "delphix-vpc"
+  default = "delphix-test-vpc"
   description = "The name of your VPC where the Delphix  VSI is to be provisioned."
 }
 variable "zone" {
-  default     = "us-east-1"
+  default     = "us-south"
   description = "The VPC Zone that you want your VPC networks and virtual servers to be provisioned in. To list available zones, run `ibmcloud is zones`."
 }
 
 variable "resource_group" {
   # use default or whatever valid resource name in your account
-  default = "default"
+  default = "Default"
   description = "Optional. The value of the resource group of VPC."
 }
 
@@ -76,7 +81,7 @@ variable "vnf_cos_image_url" {
 }
 
 variable "vnf_vpc_image_name" {
-  default     = "delphix-6.0.2.1"
+  default     = "delphix-6021"
   description = "The name of the custom image to be provisioned in your IBM Cloud account."
 }
 
