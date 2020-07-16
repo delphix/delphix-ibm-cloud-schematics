@@ -28,12 +28,7 @@ Before you can apply the template in IBM Cloud, complete the following steps.
 
 ### Required system resources			
 To run the software, the following system resources are required:		
-1. Instance profile: Delphix recommends the memory profiles for your VPC environment.
-Recommended Profiles: 
-- mx2-8x64 (minimum)
-- mx2-16x128
-- mx2-32x256
-- mx2-48x384 
+1. Instance profile: Delphix recommends the [memory profiles](https://cloud.ibm.com/docs/vpc?topic=vpc-profiles#memory) with 8vCPU or more for your VPC environment.
   
 2. To view the Data Sources supported by Delphix, refer to [Delphix documentation](https://docs.delphix.com) and select the Support Matrix section.	
 
