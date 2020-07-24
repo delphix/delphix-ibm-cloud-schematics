@@ -26,6 +26,23 @@ Before you can apply the template in IBM Cloud, complete the following steps.
 - SSH Key
 - VPC has a subnet
 
+### Configuring your Delployment Values
+
+When you select Delphix from the IBM Cloud catalog, you must enter the following values before you can apply the template: 
+
+|  Variable Name   | Description        |
+|------------------|--------------------|
+| ibmcloud_api_key | The user's IBM Cloud api key |
+| subnet_id | The id of the subnet where the Delphix VSI is provisioned |
+|ssh_key | The name fo the public SSH key to be used when provisioning the Delphix VSI |
+|vpcname | The name of your VPC where the Delphix VSI is to be provisioned |
+|profile | The profile of compute CPU and memory resources to be used when provisioning the Delphix VSI. For a list of available profiles, visit https://cloud.ibm.com/docs/vpc?topic=vpc-profiles |
+|hostname | The name of your Virtual Server to be provisioned |
+|zone | The VPC Zone that you want your VPC networks and virtual servers to be provisioned. |
+|volumesize | The block storage volume size in GB. Enter a size between 10 and 2000 GB. |
+
+
+
 ### Required system resources			
 To run the software, the following system resources are required:		
 1. Instance profile: Delphix recommends the [memory profiles](https://cloud.ibm.com/docs/vpc?topic=vpc-profiles#memory) with 8vCPU or more for your VPC environment.
