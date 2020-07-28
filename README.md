@@ -12,7 +12,7 @@ Virtualized datasets non-disruptively sync with production instances.
 
 ### Prerequisites
 - Must have access to Gen 2 VPC.
-- The given VPC must have at least one subnet IP address unassigned - the F5-BIGIP VSI will be assigned a IP Address from the user provided subnet as an input.
+- The given VPC must have at least one subnet IP address unassigned 
 - Delphix software deployment requirements are detailed in [Delphix documentation](https://docs.delphix.com).					
 
 #### Dependencies
@@ -67,7 +67,3 @@ BYOL (Bring Your Own License) solutions let you run software on Compute Engine w
  
 ### End User License Agreement
 By subscribing to this product you agree to terms and conditions outlined in the product [End User License Agreement (EULA)](https://www.delphix.com/sites/default/files/2019-04/Delphix-Product-License-and-Services-Agreement-Commercial.pdf).
-
-### Authors
-
-* **Doug Smith** - *Initial work* - [Delphix](https://www.delphix.com)
