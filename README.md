@@ -21,13 +21,9 @@ Refresh, reset or provision virtualized datasets to current date/time or a speci
 #### Dependencies
 Before you can apply the template in IBM Cloud, complete the following steps.
 
-1. Ensure that you have the following permissions in IBM Cloud Identity and Access Management:
+Ensure that you have the following permissions in IBM Cloud Identity and Access Management:
 - Manager service access role for IBM Cloud Schematics
 - Operator platform role for VPC Infrastructure
-2. Ensure the following resources exist in your VPC Gen 2 environment
-- VPC
-- SSH Key
-- VPC has a subnet
 
 ### Configuring your Delployment Values
 
