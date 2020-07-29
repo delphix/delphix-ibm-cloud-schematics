@@ -35,15 +35,11 @@ When you select Delphix from the IBM Cloud catalog, you must enter the following
 |subnet_id | The id of the subnet where the Delphix VSI is provisioned |
 |ssh_key | The name fo the public SSH key to be used when provisioning the Delphix VSI |
 |vpcname | The name of your VPC where the Delphix VSI is to be provisioned |
-|profile | The profile of compute CPU and memory resources to be used when provisioning the Delphix VSI. For a list of available profiles, visit https://cloud.ibm.com/docs/vpc?topic=vpc-profiles |
+|profile | The profile of compute CPU and memory resources to be used when provisioning the Delphix VSI. Delphix recommends the [memory profiles](https://cloud.ibm.com/docs/vpc?topic=vpc-profiles#memory) with 8vCPU or more for your VPC environment.|
 |hostname | The name of your Virtual Server to be provisioned |
 |zone | The VPC Zone that you want your VPC networks and virtual servers to be provisioned. |
 |volumesize | The block storage volume size in GB. Enter a size between 10 and 2000 GB. |
 |volumecount| The number of storage volumes, minimun = 4. |
-
-### Required system resources			
-To run the software, the following system resources are required:		
-1. Instance profile: Delphix recommends the [memory profiles](https://cloud.ibm.com/docs/vpc?topic=vpc-profiles#memory) with 8vCPU or more for your VPC environment. 
 
 ### Outputs
 When you apply the template and Delphix is successfully provisioned into your VPC, you see the static IP address that is assigned to your virtual server instance in your Schematics log files. You can use that IP address to access Delphix setup UI. 
