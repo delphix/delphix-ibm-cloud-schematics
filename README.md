@@ -28,7 +28,7 @@ Before you can apply the template in IBM Cloud, complete the following steps.
 
 ### Configuring your Delployment Values
 
-When you select Delphix from the IBM Cloud catalog, you must enter the following values before you can apply the template: 
+When you select Delphix from the IBM Cloud catalog, you must enter the following deployment values before you can apply the template: 
 
 |  Variable Name   | Description        |
 |------------------|--------------------|
@@ -41,23 +41,17 @@ When you select Delphix from the IBM Cloud catalog, you must enter the following
 |zone | The VPC Zone that you want your VPC networks and virtual servers to be provisioned. |
 |volumesize | The block storage volume size in GB. Enter a size between 10 and 2000 GB. |
 
-
-
 ### Required system resources			
 To run the software, the following system resources are required:		
-1. Instance profile: Delphix recommends the [memory profiles](https://cloud.ibm.com/docs/vpc?topic=vpc-profiles#memory) with 8vCPU or more for your VPC environment.
-  
-2. To view the Data Sources supported by Delphix, refer to [Delphix documentation](https://docs.delphix.com) and select the Support Matrix section.	
+1. Instance profile: Delphix recommends the [memory profiles](https://cloud.ibm.com/docs/vpc?topic=vpc-profiles#memory) with 8vCPU or more for your VPC environment. 
 
-### Installing
-
-A step by step series of examples that tell you how to get a development env running
-(Coming later)
-
+### Outputs
+When you apply the template and Delphix is successfully provisioned in IBM Cloud, you see the public IP address that is assigned to your virtual server instance in your Schematics log files. You can use the IP address to access Delphix setup UI. 
 
 ### Deploying Delphix
 
 Refer to the Delphix [Deployment documentation](https://docs.delphix.com/docs/deployment) for detailed deployment instructions.	
+To view the Data Sources supported by Delphix, refer to [Delphix documentation](https://docs.delphix.com) and select the Support Matrix section.	
 
 ### Support	
 This product is provided and supported by Delphix. If you encounter an issue that requires opening a support case, click Get help? at the beginning of this page or go directly to [Delphix support page](https://support.delphix.com). For issues with the underlying IBM Cloud resources, open a support case in the IBM Cloud Support Center. [The Delphix support policies](https://support.delphix.com/Support_Policies_and_Technical_Bulletins/Support_Policies/Delphix_Support_Policies_(KBA1504)) are based on your support plan level. You must have a [Delphix Support account](https://support.delphix.com/Support_Policies_and_Technical_Bulletins/Support_Policies/Customer_Support_User_Account_Registration_Policy_(KBA1028)) to file a case.
