@@ -39,7 +39,7 @@ When you select Delphix from the IBM Cloud catalog, you must enter the following
 |hostname | The name of your Virtual Server to be provisioned |
 |zone | The VPC Zone that you want your VPC networks and virtual servers to be provisioned. |
 |volumesize | The block storage volume size in GB. Enter a size between 10 and 2000 GB. |
-|volumecount| The number of storage volumes, minimun = 4. |
+|volumecount| The number of storage volumes, minimum = 4. |
 
 ### Outputs
 When you apply the template and Delphix is successfully provisioned into your VPC, you see the static IP address that is assigned to your virtual server instance in your Schematics log files. You can use that IP address to access Delphix setup UI. 
