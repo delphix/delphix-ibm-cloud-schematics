@@ -5,12 +5,12 @@ Delphix is a DataOps platform for application development and testing teams, pro
 
 Delphix rapidly provisions secure, production-quality data to test environments in IBM Cloud, providing self-service controls to version and manage data like code.
 
-Data Delivery with Delphix Virtualization
-Non-disruptively synce with production data sources, regardless of location.
+#### Data Delivery with Delphix Virtualization
+Non-disruptively sync with production data sources, regardless of location.
 Quickly provision as many secure, non-production datasets as desired by application development and testing teams.
 Enable On-demand access to production-quality data ensuring comprehensive test coverage.
 Version data like code:  rewind, branch, and share datasets from any point in time.
-Refresh, reset or provision virtualized datasets to current date/time or specific point-in-time.
+Refresh, reset or provision virtualized datasets to current date/time or a specific point-in-time.
 
 ### Prerequisites
 - Must have access to Gen 2 VPC.
