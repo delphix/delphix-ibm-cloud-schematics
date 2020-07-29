@@ -1,18 +1,21 @@
 # Delphix Data Virtualization for IBM Cloud
-Whether your production database lives in IBM Cloud or remains on-premise, provisioning data for cloud-based application development and testing is likely the slowest part of your software delivery pipeline. Time-consuming, manual processes for consolidating, securing, and distributing data delay project timelines because dev and test teams are stuck waiting on data to be delivered into test environments.  
+Whether your production database lives in IBM Cloud or remains on-premise, provisioning data for cloud-based application development and testing is likely the slowest part of your software delivery pipeline. Time-consuming, manual processes for consolidating, securing, and distributing data delay project timelines because dev and test teams are stuck waiting on data to be delivered into their test environments.  
 
-Delphix is a DataOps platform for application development teams, providing secure data for non-production environments on-demand to streamline IBM Cloud migration projects and remove bottlenecks from DevOps workflows. For more information visit www.delphix.com.
+Delphix is a DataOps platform for application development and testing teams, providing secure data for non-production environments on-demand to streamline application transformation projects and remove bottlenecks from DevOps workflows. For more information visit www.delphix.com.
 
-Delphix rapidly provisions secure, production-quality data to test environments in IBM Cloud, providing self-service controls to version data like code.
+Delphix rapidly provisions secure, production-quality data to test environments in IBM Cloud, providing self-service controls to version and manage data like code.
 
 Data Delivery with Delphix Virtualization
-On-demand access to production-quality data ensures comprehensive test coverage.
+Non-disruptively synce with production data sources, regardless of location.
+Quickly provision as many secure, non-production datasets as desired by application development and testing teams.
+Enable On-demand access to production-quality data ensuring comprehensive test coverage.
 Version data like code:  rewind, branch, and share datasets from any point in time.
-Virtualized datasets non-disruptively sync with production instances.
+Refresh, reset or provision virtualized datasets to current date/time or specific point-in-time.
 
 ### Prerequisites
 - Must have access to Gen 2 VPC.
-- The given VPC must have at least one subnet IP address unassigned 
+- Define the VPC subnet, IP address and Hostname to be applied to the Delphix VSI.
+- Ensure SSH, HTTP/HTTPS port accessibility to the Delphix VSI.
 - Delphix software deployment requirements are detailed in [Delphix documentation](https://docs.delphix.com).					
 
 #### Dependencies
@@ -32,21 +35,22 @@ When you select Delphix from the IBM Cloud catalog, you must enter the following
 
 |  Variable Name   | Description        |
 |------------------|--------------------|
-| ibmcloud_api_key | The user's IBM Cloud api key |
-| subnet_id | The id of the subnet where the Delphix VSI is provisioned |
+|ibmcloud_api_key | The user's IBM Cloud api key |
+|subnet_id | The id of the subnet where the Delphix VSI is provisioned |
 |ssh_key | The name fo the public SSH key to be used when provisioning the Delphix VSI |
 |vpcname | The name of your VPC where the Delphix VSI is to be provisioned |
 |profile | The profile of compute CPU and memory resources to be used when provisioning the Delphix VSI. For a list of available profiles, visit https://cloud.ibm.com/docs/vpc?topic=vpc-profiles |
 |hostname | The name of your Virtual Server to be provisioned |
 |zone | The VPC Zone that you want your VPC networks and virtual servers to be provisioned. |
 |volumesize | The block storage volume size in GB. Enter a size between 10 and 2000 GB. |
+|volumecount| The number of storage volumes, minimun = 4. |
 
 ### Required system resources			
 To run the software, the following system resources are required:		
 1. Instance profile: Delphix recommends the [memory profiles](https://cloud.ibm.com/docs/vpc?topic=vpc-profiles#memory) with 8vCPU or more for your VPC environment. 
 
 ### Outputs
-When you apply the template and Delphix is successfully provisioned in IBM Cloud, you see the public IP address that is assigned to your virtual server instance in your Schematics log files. You can use the IP address to access Delphix setup UI. 
+When you apply the template and Delphix is successfully provisioned into your VPC, you see the static IP address that is assigned to your virtual server instance in your Schematics log files. You can use that IP address to access Delphix setup UI. 
 
 ### Deploying Delphix
 
