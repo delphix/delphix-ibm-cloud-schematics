@@ -1,4 +1,4 @@
-# Delphix Data Virtualization for IBM Cloud
+# Delphix Data Masking for IBM Cloud
 Whether your production database lives in IBM Cloud or remains on-premise, provisioning data for cloud-based application development and testing is likely the slowest part of your software delivery pipeline. Time-consuming, manual processes for consolidating, securing, and distributing data delay project timelines because dev and test teams are stuck waiting on data to be delivered into their test environments.  
 
 Delphix is a DataOps platform for application development and testing teams, providing secure data for non-production environments on-demand to streamline application transformation projects and remove bottlenecks from DevOps workflows. For more information visit www.delphix.com.
@@ -47,7 +47,7 @@ When you apply the template and Delphix is successfully provisioned into your VP
 ### Deploying Delphix
 
 Refer to the Delphix [Deployment documentation](https://docs.delphix.com/docs/deployment) for detailed deployment instructions.	
-To view the Data Sources supported by Delphix, refer to [Delphix documentation](https://docs.delphix.com) and select the Support Matrix section.	
+To view the Data Sources supported by Delphix, refer to [Delphix documentation](https://maskingdocs.delphix.com) and select the Support Matrix section.	
 
 ### Support	
 This product is provided and supported by Delphix. If you encounter an issue that requires opening a support case, click Get help? at the beginning of this page or go directly to [Delphix support page](https://support.delphix.com). For issues with the underlying IBM Cloud resources, open a support case in the IBM Cloud Support Center. [The Delphix support policies](https://support.delphix.com/Support_Policies_and_Technical_Bulletins/Support_Policies/Delphix_Support_Policies_(KBA1504)) are based on your support plan level. You must have a [Delphix Support account](https://support.delphix.com/Support_Policies_and_Technical_Bulletins/Support_Policies/Customer_Support_User_Account_Registration_Policy_(KBA1028)) to file a case.
