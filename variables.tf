@@ -3,29 +3,29 @@ variable "TF_VERSION" {
  description = "terraform engine version to be used in schematics"
 }
 
-variable "ibmcloud_api_key" {
-   defined in tfvars
-    description = "The user's IBM Cloud api key."
-}
+#variable "ibmcloud_api_key" {
+#   defined in tfvars
+#   description = "The user's IBM Cloud api key."
+#}
 
 variable "ssh_key" {
-   defined in tfvars
+   default = "required"
   description = "The name of the public SSH key to be used when provisining Delphix VSI."
 }
 
-variable "iaas_classic_username" {
-  defined in tfvars
-   description = "The user's classic infastructure user name."
-}
+#variable "iaas_classic_username" {
+#  defined in tfvars
+#   description = "The user's classic infastructure user name."
+#}
 
-variable "iaas_classic_api_key" {
-   defined in tfvars
-    description = "The account's classic infastructure api key."
-}
+#variable "iaas_classic_api_key" {
+#   defined in tfvars
+#    description = "The account's classic infastructure api key."
+#}
 
 variable "hostname" {
    default region to be used
-    default = "ddpeng1"
+    default = "required"
     description = "The name of your Delphix Virtual Server to be provisioned."
 }
 
@@ -61,12 +61,12 @@ variable "volumesize" {
 
 variable "vpcname" {
    default vpc name to be used
-  default = "delphix-test-vpc"
-  description = "The name of your VPC where the Delphix  VSI is to be provisioned."
+  default = "required"
+  description = "The name of your VPC where the Delphix VSI is to be provisioned."
 }
 
 variable "zone" {
-  default     = "us-south"
+  default     = "zone"
   description = "The VPC Zone that you want your VPC networks and virtual servers to be provisioned in. To list available zones, run `ibmcloud is zones`."
 }
 
@@ -87,6 +87,6 @@ variable "vnf_vpc_image_name" {
 }
 
 variable "subnet_id" {
-  default = "dev-sub1"
+  default = "required"
   description = "The id of the subnet where the Delhpix VSI is to be provisioned."
 }
