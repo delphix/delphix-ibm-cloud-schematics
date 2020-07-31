@@ -3,13 +3,13 @@ The Delphix Data Masking capability for IBM Cloud represents an automated approa
 Delphix is a DataOps platform for application development and testing teams, providing secure data for non-production environments on-demand to streamline application transformation projects and remove bottlenecks from DevOps workflows. For more information visit www.delphix.com.
 
 #### Data Masking with Delphix Data Masking for IBM Cloud
-Delphix Masking is a multi-user, browser-based web application that provides complete, secure, and scalable software for your sensitive data discovery, masking and tokenization needs, while meeting enterprise-class infrastructure requirements. The Delphix Dynamic Data Platform has several key characteristics to enable your organization to successfully protect sensitive data across the enterprise:
+Delphix Masking is a multi-user, browser-based web application that provides complete, secure, and scalable software for your sensitive data discovery, masking and tokenization needs, while meeting enterprise-class infrastructure requirements. The Delphix DataOps Platform has several key characteristics to enable your organization to successfully protect sensitive data across the enterprise:
 
 End-to-End Masking — The Delphix platform automatically detects confidential information, irreversibly masks data values, then generates reports and email notifications to confirm that all sensitive data has been masked.
 
 Realistic Data — Data masked with the Delphix platform is production-like in quality. Masked application data in non-production environments remains fully functional and realistic, enabling the development of higher-quality code.
 
-Masking Integrated with Virtualization — Most masking solutions fail due to the need for repeated, lengthy batch jobs for extracting and masking data and lack delivery capabilities for downstream environments. The Delphix Dynamic Data Platform seamlessly integrates data masking with data virtualization, allowing teams to quickly deliver masked, virtual data copies on premises or into private, public, and hybrid cloud environments.
+Masking Integrated with Virtualization — Most masking solutions fail due to the need for repeated, lengthy batch jobs for extracting and masking data and lack delivery capabilities for downstream environments. The Delphix DataOps Platform seamlessly integrates data masking with data virtualization, allowing teams to quickly deliver masked, virtual data copies on premises or into private, public, and hybrid cloud environments.
 
 Referential Integrity — Delphix masks consistently across heterogeneous data sources. To do so, metadata and data is scanned to identify and preserve the primary/foreign key relationships between elements so that data is masked the same way across different tables and databases.
 
