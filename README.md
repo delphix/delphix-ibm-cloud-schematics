@@ -1,22 +1,29 @@
 # Delphix Data Masking for IBM Cloud
-Whether your production database lives in IBM Cloud or remains on-premise, provisioning data for cloud-based application development and testing is likely the slowest part of your software delivery pipeline. Time-consuming, manual processes for consolidating, securing, and distributing data delay project timelines because dev and test teams are stuck waiting on data to be delivered into their test environments.  
-
+The Delphix Data Masking capability for IBM Cloud represents an automated approach to protecting sensitive data non-production environments, replacing confidential information such as social security numbers, patient records, and credit card information with fictitious, yet realistic data.
 Delphix is a DataOps platform for application development and testing teams, providing secure data for non-production environments on-demand to streamline application transformation projects and remove bottlenecks from DevOps workflows. For more information visit www.delphix.com.
 
-Delphix rapidly provisions secure, production-quality data to test environments in IBM Cloud, providing self-service controls to version and manage data like code.
+#### Data Masking with Delphix Data Masking for IBM Cloud
+Delphix Masking is a multi-user, browser-based web application that provides complete, secure, and scalable software for your sensitive data discovery, masking and tokenization needs, while meeting enterprise-class infrastructure requirements. The Delphix Dynamic Data Platform has several key characteristics to enable your organization to successfully protect sensitive data across the enterprise:
 
-#### Data Delivery with Delphix Virtualization
-Non-disruptively sync with production data sources, regardless of location.
-Quickly provision as many secure, non-production datasets as desired by application development and testing teams.
-Enable On-demand access to production-quality data ensuring comprehensive test coverage.
-Version data like code:  rewind, branch, and share datasets from any point in time.
-Refresh, reset or provision virtualized datasets to current date/time or a specific point-in-time.
+End-to-End Masking — The Delphix platform automatically detects confidential information, irreversibly masks data values, then generates reports and email notifications to confirm that all sensitive data has been masked.
+
+Realistic Data — Data masked with the Delphix platform is production-like in quality. Masked application data in non-production environments remains fully functional and realistic, enabling the development of higher-quality code.
+
+Masking Integrated with Virtualization — Most masking solutions fail due to the need for repeated, lengthy batch jobs for extracting and masking data and lack delivery capabilities for downstream environments. The Delphix Dynamic Data Platform seamlessly integrates data masking with data virtualization, allowing teams to quickly deliver masked, virtual data copies on premises or into private, public, and hybrid cloud environments.
+
+Referential Integrity — Delphix masks consistently across heterogeneous data sources. To do so, metadata and data is scanned to identify and preserve the primary/foreign key relationships between elements so that data is masked the same way across different tables and databases.
+
+Algorithms/Frameworks — Seven algorithm frameworks allow users to create and configure algorithms to match specific security policies. Over twenty five out-of-the-box, preconfigured algorithms help businesses mask everything from names and addresses to credit card numbers and text fields. Moreover, the Delphix platform includes prepackaged profiling sets for healthcare and financial information, as well as the ability to perform tokenization: a process that can be used to obfuscate data sent for processing, then reversed when the processed data set is returned.
+
+Ease of Use — With a single solution, Delphix customers can mask data across a variety of platforms. Moreover, businesses are not required to program their own masking algorithms or rely on extensive administrator involvement. Our web-based UI enables masking with a few mouse clicks and little training.
+
+Automated discovery of sensitive data — The Delphix Profiler automatically identifies sensitive data across databases and files, the time-consuming work associated with a data masking project is reduced significantly.
 
 ### Prerequisites
 - Must have access to Gen 2 VPC.
-- Define the VPC subnet, IP address and Hostname to be applied to the Delphix VSI.
+- Define the VPC subnet, IP address and Hostname to be applied to the Delphix Masking VSI.
 - Ensure SSH, HTTP/HTTPS port accessibility to the Delphix VSI.
-- Delphix software deployment requirements are detailed in [Delphix documentation](https://docs.delphix.com).					
+- Delphix software deployment requirements are detailed in [Delphix documentation](https://maskingdocs.delphix.com).					
 
 #### Dependencies
 Before you can apply the template in IBM Cloud, complete the following steps.
@@ -27,19 +34,19 @@ Ensure that you have the following permissions in IBM Cloud Identity and Access 
 
 ### Configuring your Delployment Values
 
-When you select Delphix from the IBM Cloud catalog, you must enter the following deployment values before you can apply the template: 
+When you select Delphix Data Masking from the IBM Cloud catalog, you must enter the following deployment values before you can apply the template: 
 
 |  Variable Name   | Description        |
 |------------------|--------------------|
 |ibmcloud_api_key | The user's IBM Cloud api key |
-|subnet_id | The id of the subnet where the Delphix VSI is provisioned |
-|ssh_key | The name fo the public SSH key to be used when provisioning the Delphix VSI |
-|vpcname | The name of your VPC where the Delphix VSI is to be provisioned |
-|profile | The profile of compute CPU and memory resources to be used when provisioning the Delphix VSI. Delphix recommends the [memory profiles](https://cloud.ibm.com/docs/vpc?topic=vpc-profiles#memory) with 8vCPU or more for your VPC environment.|
+|subnet_id | The id of the subnet where the Delphix Masking VSI is provisioned |
+|ssh_key | The name fo the public SSH key to be used when provisioning the Delphix Masking VSI |
+|vpcname | The name of your VPC where the Delphix Masing VSI is to be provisioned |
+|profile | The profile of compute CPU and memory resources to be used when provisioning the Delphix Masking VSI. Delphix recommends the [memory profiles](https://cloud.ibm.com/docs/vpc?topic=vpc-profiles#memory) with 8vCPU or more for your VPC environment.|
 |hostname | The name of your Virtual Server to be provisioned |
 |zone | The VPC Zone that you want your VPC networks and virtual servers to be provisioned. |
-|volumesize | The block storage volume size in GB. Enter a size between 10 and 2000 GB. |
-|volumecount| The number of storage volumes, minimum = 4. |
+|volumesize | The block storage volume size in GB. Enter a size between 50 and 500 GB. |
+|volumecount| The number of storage volumes, minimum = 1. |
 
 ### Outputs
 When you apply the template and Delphix is successfully provisioned into your VPC, you see the static IP address that is assigned to your virtual server instance in your Schematics log files. You can use that IP address to access Delphix setup UI. 
