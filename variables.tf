@@ -77,7 +77,7 @@ variable "resource_group" {
 }
 
 variable "vnf_cos_image_url" {
-  default     = "cos://us-east/delphix-data-virtualization-cos-standard-axh/Delphix_6.0.2.1_2020-06-03-17-16_Standard_KVM.qcow2"
+  default     = "cos://us-east/delphix-data-virtualization-cos-standard-axh/Delphix_6.0.3.0_2020-07-30-01-48_Standard_KVM.qcow2"
   description = "The COS image object SQL URL for Delphix image."
 }
 
