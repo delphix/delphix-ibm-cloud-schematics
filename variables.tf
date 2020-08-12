@@ -25,7 +25,7 @@ variable "iaas_classic_api_key" {
 
 variable "hostname" {
    default region to be used
-    default = "ddpeng1"
+    default = "default"
     description = "The name of your Delphix Virtual Server to be provisioned."
 }
 
@@ -61,7 +61,7 @@ variable "volumesize" {
 
 variable "vpcname" {
    default vpc name to be used
-  default = "delphix-test-vpc"
+  default = "default"
   description = "The name of your VPC where the Delphix  VSI is to be provisioned."
 }
 
@@ -87,6 +87,6 @@ variable "vnf_vpc_image_name" {
 }
 
 variable "subnet_id" {
-  default = "dev-sub1"
+  default = "default"
   description = "The id of the subnet where the Delhpix VSI is to be provisioned."
 }
