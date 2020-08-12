@@ -3,25 +3,25 @@ variable "TF_VERSION" {
  description = "terraform engine version to be used in schematics"
 }
 
-#variable "ibmcloud_api_key" {
-#   defined in tfvars
-#   description = "The user's IBM Cloud api key."
-#}
+variable "ibmcloud_api_key" {
+   defined in tfvars
+   description = "The user's IBM Cloud api key."
+}
 
 variable "ssh_key" {
    default = "required"
   description = "The name of the public SSH key to be used when provisining Delphix VSI."
 }
 
-#variable "iaas_classic_username" {
-#  defined in tfvars
-#   description = "The user's classic infastructure user name."
-#}
+variable "iaas_classic_username" {
+  defined in tfvars
+   description = "The user's classic infastructure user name."
+}
 
-#variable "iaas_classic_api_key" {
-#   defined in tfvars
-#    description = "The account's classic infastructure api key."
-#}
+variable "iaas_classic_api_key" {
+   defined in tfvars
+    description = "The account's classic infastructure api key."
+}
 
 variable "hostname" {
    default region to be used
@@ -77,12 +77,12 @@ variable "resource_group" {
 }
 
 variable "vnf_cos_image_url" {
-  default     = "cos://us-east/delphix-data-virtualization-cos-standard-axh/Delphix_6.0.2.1_2020-06-03-17-16_Standard_KVM.qcow2"
+  default     = "cos://us-east/delphix-data-virtualization-cos-standard-axh/Delphix_6.0.3.0_2020-07-30-01-48_Standard_KVM.qcow2"
   description = "The COS image object SQL URL for Delphix image."
 }
 
 variable "vnf_vpc_image_name" {
-  default     = "delphix-6021"
+  default     = "delphix-6030"
   description = "The name of the custom image to be provisioned in your IBM Cloud account."
 }
 
