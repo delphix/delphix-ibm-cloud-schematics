@@ -13,15 +13,15 @@ variable "ssh_key" {
   description = "The name of the public SSH key to be used when provisining Delphix VSI."
 }
 
-variable "iaas_classic_username" {
-  defined in tfvars
-   description = "The user's classic infastructure user name."
-}
+#variable "iaas_classic_username" {
+#  defined in tfvars
+#   description = "The user's classic infastructure user name."
+#}
 
-variable "iaas_classic_api_key" {
-   defined in tfvars
-    description = "The account's classic infastructure api key."
-}
+#variable "iaas_classic_api_key" {
+#   defined in tfvars
+#    description = "The account's classic infastructure api key."
+#}
 
 variable "hostname" {
    default region to be used
