@@ -72,7 +72,7 @@ variable "zone" {
 
 variable "resource_group" {
   # use default or whatever valid resource name in your account
-  default = "Default"
+  default = "default"
   description = "Optional. The value of the resource group of VPC."
 }
 
