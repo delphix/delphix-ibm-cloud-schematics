@@ -31,7 +31,6 @@ When you select Delphix from the IBM Cloud catalog, you must enter the following
 
 |  Variable Name   | Description        |
 |------------------|--------------------|
-|ibmcloud_api_key | The user's IBM Cloud api key |
 |subnet_id | The id of the subnet where the Delphix VSI is provisioned |
 |ssh_key | The name fo the public SSH key to be used when provisioning the Delphix VSI |
 |vpcname | The name of your VPC where the Delphix VSI is to be provisioned |
